@@ -1,6 +1,17 @@
-<form method="POST" action="">
-    {% for line in testbooks %}
-        {{line.title}}
-        <br>
-    {% endfor %}
-</form>
+{% block content %}
+        
+    <table class="table">   
+        {% block page_content %}
+            <tr>
+                <th scope="col">Testplan Title</th>
+            </tr>
+            {% for line in testbooks %}
+                <tr>
+                    <td>{{line.title}}</td>
+                </tr>
+            {% endfor %}
+        {% endblock %}
+        </div>
+    </table> 
+
+{% endblock %}

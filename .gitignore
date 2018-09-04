@@ -1,0 +1,3 @@
+# remove local virtualenv
+localenv/
+.vscode/

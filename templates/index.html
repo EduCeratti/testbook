@@ -1,8 +1,8 @@
-<h1>TestPlan</h1>
+{% extends "bootstrap/base.html" %}
 
-<form method="POST" action="">
-    Title <input type="text" name="title" required="true">
-    <br>
+{% block content %}
 
-    <input type="submit">
-</form>
+    {% include 'create_testbook.html' %}
+    {% include 'list_testbook.html' %}
+
+{% endblock %}
